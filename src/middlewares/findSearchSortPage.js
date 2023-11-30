@@ -8,8 +8,13 @@ module.exports = (req, res, next) => {
   // Searching & Sorting & Pagination:
 
   // SEARCHING: URL?search[key1]=value1&search[key2]=value2
-  const search = req.query?.search || {};
+  let search = req.query?.search || {};
   for (let key in search) search[key] = { $regex: search[key], $options: "i" };
+  /* Alternative Searching: *
+      let where = [];
+      for (let key in search) where.push(`this.${key}.toString().includes('${search[key]}')`)
+      search = where.length ? { $where: where.join(' && ') } : {}
+      /* Alternative Searching: */
 
   // Cancelled -> SORTING: URL?sort[key1]=1&sort[key2]=-1 (1:ASC, -1:DESC)
   // mongoose=^8.0 -> SORTING: URL?sort[key1]=asc&sort[key2]=desc (asc: A->Z - desc: Z->A)
