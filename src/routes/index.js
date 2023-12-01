@@ -8,24 +8,24 @@ const router = require("express").Router();
 
 // URL: /
 
-// // auth:
+// auth:
 router.use("/auth", require("./auth"));
-// // user:
+// user:
 router.use("/users", require("./user"));
-// // token:
+// token:
 router.use("/tokens", require("./token"));
 
-// // brand:
+// brand:
 router.use("/brands", require("./brand"));
-// // category:
+// category:
 router.use("/categories", require("./category"));
-// // firm:
+// firm:
 router.use("/firms", require("./firm"));
-// // product:
+// product:
 router.use("/products", require("./product"));
-// // purchase:
+// purchase:
 router.use("/purchases", require("./purchase"));
-// // sale:
+// sale:
 router.use("/sales", require("./sale"));
 
 // document:
