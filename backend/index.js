@@ -37,14 +37,12 @@ app.use(express.json());
 // Default using:
 // app.use(cors())
 // Default options:
-// app.use(
-//   cors({
-//     origin: "*",
-//     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-//     preflightContinue: false,
-//     optionsSuccessStatus: 204,
-//   })
-// );
+// app.use(cors({
+//     "origin": "*",
+//     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+//     "preflightContinue": false,
+//     "optionsSuccessStatus": 204
+// }))
 /*
 
     if (process.env.NODE_ENV=="development") {
@@ -54,21 +52,26 @@ app.use(express.json());
     }
     app.use(cors(corsOptions))
 */
-// app.use(
-//   cors({
-//     origin: [
-//       "http://localhost:3000",
-//       "http://localhost:4173",
-//       "http://localhost:5173",
-//     ], //"http://localhost:5173", // true // false // "*",
+// app.use(cors({
+//     "origin": ["http://localhost:3000", "http://localhost:4173", "http://localhost:5173"], //"http://localhost:5173", // true // false // "*",
 //     // "origin": function (origin, callback) { },
-//     methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
-//   })
-// );
+//     "methods": "GET, HEAD, PUT, PATCH, POST, DELETE",
+// }))
 /*
     app.get('*', cors({ origin: 'onlyget.com' }))
     app.all('*', cors({ origin: 'allmethods.com' }))
 */
+
+// // app.use(require('cors')()) // Run with defaults.
+app.use(
+  require("cors")({
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:4173",
+      "http://localhost:5173",
+    ],
+  })
+);
 
 // Call static uploadFile:
 app.use("/upload", express.static("./upload"));
@@ -112,4 +115,4 @@ app.listen(PORT, HOST, () => console.log(`http://${HOST}:${PORT}`));
 
 /* ------------------------------------------------------- */
 // Syncronization (must be in commentLine):
-// require("./src/helpers/sync")(); // !!! It clear database.Boom
+// require('./src/helpers/sync')() // !!! It clear database.

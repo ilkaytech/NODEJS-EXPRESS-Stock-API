@@ -40,7 +40,17 @@
     "application/json"
   ],
   "paths": {
-    "/auth/login": {
+    "/account/register": {
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/account/auth/login": {
       "post": {
         "tags": [
           "Authentication"
@@ -74,7 +84,7 @@
         }
       }
     },
-    "/auth/refresh": {
+    "/account/auth/refresh": {
       "post": {
         "tags": [
           "Authentication"
@@ -109,7 +119,7 @@
         }
       }
     },
-    "/auth/logout": {
+    "/account/auth/logout": {
       "get": {
         "tags": [
           "Authentication"
@@ -338,7 +348,7 @@
         }
       }
     },
-    "/brands/": {
+    "/stock/brands/": {
       "get": {
         "tags": [
           "Brands"
@@ -374,7 +384,7 @@
         }
       }
     },
-    "/brands/{id}": {
+    "/stock/brands/{id}": {
       "get": {
         "tags": [
           "Brands"
@@ -475,7 +485,7 @@
         }
       }
     },
-    "/categories/": {
+    "/stock/categories/": {
       "get": {
         "tags": [
           "Categories"
@@ -511,7 +521,7 @@
         }
       }
     },
-    "/categories/{id}": {
+    "/stock/categories/{id}": {
       "get": {
         "tags": [
           "Categories"
@@ -612,7 +622,7 @@
         }
       }
     },
-    "/firms/": {
+    "/stock/firms/": {
       "get": {
         "tags": [
           "Firms"
@@ -648,7 +658,7 @@
         }
       }
     },
-    "/firms/{id}": {
+    "/stock/firms/{id}": {
       "get": {
         "tags": [
           "Firms"
@@ -749,7 +759,7 @@
         }
       }
     },
-    "/products/": {
+    "/stock/products/": {
       "get": {
         "tags": [
           "Products"
@@ -785,7 +795,7 @@
         }
       }
     },
-    "/products/{id}": {
+    "/stock/products/{id}": {
       "get": {
         "tags": [
           "Products"
@@ -886,7 +896,7 @@
         }
       }
     },
-    "/purchases/": {
+    "/stock/purchases/": {
       "get": {
         "tags": [
           "Purchases"
@@ -922,7 +932,7 @@
         }
       }
     },
-    "/purchases/{id}": {
+    "/stock/purchases/{id}": {
       "get": {
         "tags": [
           "Purchases"
@@ -1023,7 +1033,7 @@
         }
       }
     },
-    "/sales/": {
+    "/stock/sales/": {
       "get": {
         "tags": [
           "Sales"
@@ -1059,7 +1069,7 @@
         }
       }
     },
-    "/sales/{id}": {
+    "/stock/sales/{id}": {
       "get": {
         "tags": [
           "Sales"
