@@ -12,6 +12,18 @@
 
 ![ERD](./erdStockAPI2.png)
 
+### Login:
+
+![ERD](./login.png)
+
+### Register:
+
+![ERD](./login.png)
+
+### Swagger:
+
+![ERD](./swagger.png)
+
 ### Folder/File Structure:
 
 ```
