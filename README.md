@@ -1,6 +1,8 @@
 # NODEJS EXPRESS | Stock Management API
 
-# STOCK MANAGEMENT API
+## Outcome
+
+🔗 [Live - StockAPP](https://stockapp-vzgx.onrender.com)
 
 ### ERD:
 
