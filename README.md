@@ -8,8 +8,6 @@
 
 ![ERD](./erdStockAPI2.png)
 
-### Folder/File Structure:
-
 ### Stock APP Login
 
 ![IMG](./login.png)
@@ -29,6 +27,8 @@
 ### Stock APP Swagger
 
 ![IMG](./swagger.png)
+
+### Folder/File Structure:
 
 ```
     .env
