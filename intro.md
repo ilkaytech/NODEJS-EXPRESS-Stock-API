@@ -10,6 +10,26 @@
 
 ### Folder/File Structure:
 
+### Stock APP Login
+
+![IMG](./login.png)
+
+### Stock APP Register
+
+![IMG](./register.png)
+
+### Stock APP Brands
+
+![IMG](./brands.png)
+
+### Stock APP Fims
+
+![IMG](./firms.png)
+
+### Stock APP Swagger
+
+![IMG](./swagger.png)
+
 ```
     .env
     .gitignore
