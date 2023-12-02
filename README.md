@@ -1,3 +1,5 @@
+# NODEJS EXPRESS | Stock Management API
+
 # STOCK MANAGEMENT API
 
 ### ERD:
@@ -7,26 +9,6 @@
 ### ERD-2 (snake_case):
 
 ![ERD](./erdStockAPI2.png)
-
-### Stock APP Login
-
-![IMG](./login.png)
-
-### Stock APP Register
-
-![IMG](./register.png)
-
-### Stock APP Brands
-
-![IMG](./brands.png)
-
-### Stock APP Fims
-
-![IMG](./firms.png)
-
-### Stock APP Swagger
-
-![IMG](./swagger.png)
 
 ### Folder/File Structure:
 
