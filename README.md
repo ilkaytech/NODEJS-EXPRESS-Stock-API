@@ -4,6 +4,9 @@
 
 🔗 [Live - StockAPP](https://stockapp-vzgx.onrender.com)
 
+- email: admin@site.com
+- password: aA?123456
+
 ### ERD:
 
 ![ERD](./erdStockAPI.png)
