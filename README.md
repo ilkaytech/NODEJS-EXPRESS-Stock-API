@@ -21,7 +21,7 @@
 
 ### Register:
 
-![ERD](./login.png)
+![ERD](./register.png)
 
 ### Swagger:
 
